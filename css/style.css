@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+
+body {
+	line-height: 1;
+}
+
+body, input, select, textarea {
+	font-family: "Merriweather", Georgia, serif;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 2.370;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+
+html {
+		box-sizing: border-box;
+}
+
+*, *:before, *:after {
+		box-sizing: inherit;
+}
+
+body {
+		background-color: #1e222d;
+}
+
+
+html {
+		font-size: 14pt;
+	}
+
+		@media screen and (max-width: 1200px) {
+
+			html {
+				font-size: 12pt;
+			}
+
+		}
+
+		@media screen and (max-width: 700px) {
+
+			html {
+				font-size: 11pt;
+			}
+
+		}
+
+		@media screen and (max-width: 500px) {
+
+			html {
+				font-size: 10pt;
+			}
+
+		}
+
+p {
+		text-align: justify;
+		margin: 0 0 2rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-weight: 900;
+		line-height: 1.5;
+		letter-spacing: 0.075em;
+		text-transform: uppercase;
+		margin: 0 0 1rem 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			border-bottom: 0;
+			color: inherit;
+			text-decoration: none;
+}
+
+h1 {
+		font-size: 4rem;
+		line-height: 1.15;
+		margin: 0 0 2rem 0;
+}
+
+h2 {
+		font-size: 1.75rem;
+		line-height: 1.2;
+		margin: 0 0 1.5rem 0;
+}
+
+h3 {
+		font-size: 1.25rem;
+		margin: 0 0 1.5rem 0;
+}
+
+h4 {
+		font-size: 1rem;
+}
+
+h5 {
+		font-size: 0.9rem;
+}
+
+h6 {
+		font-size: 0.8rem;
+}
+
+	
+.button {
+		border: 0;
+		border-radius: 0;
+		cursor: pointer;
+		display: inline-block;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 0.8rem;
+		font-weight: 900;
+		letter-spacing: 0.070em;
+		height: 3rem;
+		line-height: 3rem;
+		padding: 0 2rem;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+}
+
+		@media screen and (max-width: 1200px) {
+
+			button,
+			.button {
+				font-size: 0.9rem;
+				height: 3.25rem;
+				line-height: 3.25rem;
+			}
+
+				button.large,
+				.button.large {
+					font-size: 1rem;
+					height: 3.75rem;
+					line-height: 3.75rem;
+				}
+
+		}
+
+button,
+.button {
+		background-color: transparent;
+		box-shadow: inset 0 0 0 2px #212931;
+		color: #212931;
+}
+
+button:hover,
+.button:hover {
+			box-shadow: inset 0 0 0 2px cyan;
+			color: grey;
+}
+
+button.primary,
+.button.primary {
+			background-color: #212931;
+			box-shadow: none;
+			color: #ffffff;
+}
+
+.image.fit {
+			display: block;
+			margin: 2.5rem 0;
+			width: 100%;
+}
+
+
+.image.fit img {
+				width: 100%;
+}
+
+		@media screen and (max-width: 700px) {
+
+			.image.fit {
+				margin: 3rem 0;
+			}
+
+			.image.main {
+				margin: 3rem 0;
+			}
+
+		}
+
+ul.buttons {
+		list-style: none;
+}
+
+
+ul.socials {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+}
+
+ul.socials li {
+	display: inline-block;
+	padding: 0 0.5rem 0 0;
+}
+
+ul {
+	list-style: disc;
+	margin: 0 0 2rem 0;
+	padding-left: 1rem;
+}
+
+ul li {
+	padding-left: 0.5rem;
+}
+
+
+#intro {
+	color: #ffffff;
+	padding: 0rem 0rem 30rem 0rem ;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	text-align: center;
+	min-height: 100vh;
+}
+
+#intro h1 {
+	font-size: 5rem;
+	line-height: 1;
+}
+
+#intro p {
+	font-size: 1.25rem;
+	font-style: italic;
+	margin-top: -0.25rem;
+	text-align: center;
+}
+
+	@media screen and (max-width: 1200px) {
+
+		#intro {
+			padding: 0rem 0rem 15rem 0rem ;
+			min-height: 80vh;
+			}
+		}
+
+	@media screen and (max-width: 700px) {
+
+		#intro {
+			padding: 0rem 0rem 10rem 0rem ;
+			min-height: 60vh;
+			}
+
+		#intro h1 {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		#intro p {
+			font-size: 1rem;
+		}
+		}
+
+
+
+
+#main {
+	background-color: #ffffff;
+	position: relative;
+	margin: 0 auto;
+	max-width: 72rem;
+	z-index: 2;
+}
+
+
+#main > .post {
+	padding: 8rem 8rem 6rem 8rem ;
+}
+
+#main > .post header.major > h1, #main > .post header.major h2 {
+	font-size: 4rem;
+	line-height: 1.1;
+	margin: 0 0 2rem 0;
+}
+
+#main > .post.start {
+	text-align: center;
+}
+
+	@media screen and (max-width: 1200px) {
+
+	#main > .post {
+		padding: 6rem 4rem 4rem 4rem;
+	}
+}
+
+	@media screen and (max-width: 700px) {
+
+		#main > .post {
+			padding: 4rem 2rem 2rem 2rem ;
+		}
+				
+		#main > .post header.major > h1, #main > .post header.major h2 {
+			font-size: 2.25rem;
+			line-height: 1.25;
+			margin: 0 0 5rem 0;
+		}
+	}
+
+#main > .posts {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	width: 100%;
+}
+
+#main > .posts > * {
+	padding: 1.5rem;
+	width: 50%;
+}
+
+#main > .posts > article {
+	border-color: lightgrey;
+	border-style: solid;
+	border-width: 0.1px;
+}
+
+	@media screen and (max-width: 1200px) {
+
+		#main > .posts > * {
+			width: 50%;
+			padding: 2.5rem;
+			width: 50%;
+		}
+}
+
+	@media screen and (max-width: 700px) {
+
+		#main > .posts > * {
+			width: 100%;
+		}
+
+		#main > .posts > * {
+			padding: 2rem;
+			width: 100%;
+		}
+				
+		#main > .posts > article .image {
+			max-width: 40rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}
+
+	@media screen and (max-width: 700px) {
+
+		#main > * {
+			padding: 1rem 1rem 0.5rem 1rem ;
+		}
+
+	}
+
+	@media screen and (max-width: 500px) {
+
+		#main {
+			width: 100%;
+		}
+
+	}
+
+
+#footer {
+	display: flex;
+	background-color: #f5f5f5;
+	color: #909498;
+	cursor: default;
+	position: relative;
+	margin: 0 auto;
+	max-width: 72rem;
+	color: black;
+}
+
+#footer a {
+	color: #717981;
+	border-bottom-color: rgba(113, 121, 129, 0.5);
+}
+
+#footer a:hover {
+		color: #18bfef
+}
+
+#footer > section.split.contact > section {
+	display: flex;
+	align-items: center;
+	padding: 3.15rem 4rem;
+}
+
+#footer > section.split.contact > section > * {
+	margin-bottom: 0;
+}
+
+#footer > section.split.contact > section > :first-child {
+	width: 7rem;
+}
+
+#footer > section.split.contact > section:first-child {
+	padding: 4rem 4rem 3.15rem 4rem;
+}
+
+#footer h3,
+#footer p {
+	font-size: 0.9rem;
+}
+
+
+#copyright {
+	color: grey;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 1.25rem;
+	letter-spacing: 0.05em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 4rem auto 8rem auto;
+}
+
+#copyright ul li {
+	display: inline-block;
+}
+
+	@media screen and (max-width: 1200px) {
+		#copyright {
+			margin: 4rem auto;
+		}
+}
+
+	@media screen and (max-width: 700px) {
+
+		#copyright ul li {
+			margin: 0.5rem auto;
+		}
+
+}
